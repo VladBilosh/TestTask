@@ -22,3 +22,7 @@ D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\ref\WpfCo
 D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\WpfCoinApp.csproj.AssemblyReference.cache
 D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\WpfCoinApp.csproj.Up2Date
+D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\DetailsPage.g.cs
+D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\MainPage.g.cs
+D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\DetailsPage.baml
+D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\obj\Debug\net8.0-windows\MainPage.baml

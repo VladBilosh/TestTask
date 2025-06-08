@@ -4,16 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCoinApp"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" Height="450" Width="800" Title="MainPage">
     <Grid>
         <Label Content="Coin" HorizontalAlignment="Left" Margin="70,74,0,0" VerticalAlignment="Top" FontSize="22"/>
         <TextBox x:Name="TBCoin" HorizontalAlignment="Left" Margin="129,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="189" Height="28"/>
         <Button x:Name="SerchBtn" Content="Search" HorizontalAlignment="Left" Margin="329,78,0,0" VerticalAlignment="Top" Height="32" Width="62" Click="SerchBtn_Click"/>
         <Label x:Name="CoinName" Content="Name:" HorizontalAlignment="Left" Margin="78,140,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="CoinName_Copy" Content="N/A" HorizontalAlignment="Left" Margin="129,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CoinName_Copy" Content="" HorizontalAlignment="Left" Margin="129,140,0,0" VerticalAlignment="Top"/>
         <Label x:Name="CoinPrice" Content="Price:" HorizontalAlignment="Left" Margin="78,185,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="CoinPrice_Copy2" Content="N/A" HorizontalAlignment="Left" Margin="129,185,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CoinPrice_Copy2" Content="" HorizontalAlignment="Left" Margin="129,185,0,0" VerticalAlignment="Top"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"/>
 
     </Grid>
 </Window>

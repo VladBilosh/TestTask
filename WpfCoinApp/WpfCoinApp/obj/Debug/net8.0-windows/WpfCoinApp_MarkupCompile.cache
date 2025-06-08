@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\JobTestTask\TestTask\WpfCoinApp\WpfCoinApp\App.xaml
-11407045341
+3-1004144231
 
-51747044778
+8365975056
 1991873981380
-MainWindow.xaml;
+DetailsPage.xaml;MainPage.xaml;MainWindow.xaml;
 
 False
 
