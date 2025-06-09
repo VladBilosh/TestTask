@@ -3,6 +3,25 @@
   "WorkspaceRootPath": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\detailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\detailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,23 +34,8 @@
       "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\models\\coininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\detailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\detailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|solutionrelative:wpfcoinapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0010543D-20EA-42BB-8594-C36309119D19}|WpfCoinApp\\WpfCoinApp.csproj|d:\\jobtesttask\\testtask\\wpfcoinapp\\wpfcoinapp\\models\\temp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +54,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfCoinApp\\MainWindow.xaml",
+              "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml",
+              "RelativeToolTip": "WpfCoinApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T07:31:43.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "WpfCoinApp\\MainPage.xaml.cs",
               "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainPage.xaml.cs",
               "RelativeToolTip": "WpfCoinApp\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwIAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T08:38:17.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "WpfCoinApp\\MainPage.xaml",
@@ -74,42 +90,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Coininfo.cs",
-              "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\Models\\Coininfo.cs",
-              "RelativeDocumentMoniker": "WpfCoinApp\\Models\\Coininfo.cs",
-              "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\Models\\Coininfo.cs",
-              "RelativeToolTip": "WpfCoinApp\\Models\\Coininfo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T07:09:34.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DetailsPage.xaml.cs",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\DetailsPage.xaml.cs",
               "RelativeDocumentMoniker": "WpfCoinApp\\DetailsPage.xaml.cs",
               "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\DetailsPage.xaml.cs",
               "RelativeToolTip": "WpfCoinApp\\DetailsPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T08:44:59.977Z"
+              "WhenOpened": "2025-06-05T08:44:59.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs [Read Only]",
-              "ViewState": "AgIAAKoBAAAAAAAAAAAvwLUBAAACAAAAAQAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfCoinApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfCoinApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T05:39:00.173Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2025-06-02T08:16:09.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\App.xaml",
               "RelativeDocumentMoniker": "WpfCoinApp\\App.xaml",
@@ -121,30 +128,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "DetailsPage.xaml",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\DetailsPage.xaml",
               "RelativeDocumentMoniker": "WpfCoinApp\\DetailsPage.xaml",
               "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\DetailsPage.xaml",
               "RelativeToolTip": "WpfCoinApp\\DetailsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-05T08:44:31.257Z"
+              "WhenOpened": "2025-06-05T08:44:31.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\vladb\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ViewState": "AgIAAKoBAAAAAAAAAAAvwLUBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T05:39:00.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfCoinApp\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WpfCoinApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
+              "Title": "Coininfo.cs",
+              "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\Models\\Coininfo.cs",
+              "RelativeDocumentMoniker": "WpfCoinApp\\Models\\Coininfo.cs",
+              "ToolTip": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\Models\\Coininfo.cs",
+              "RelativeToolTip": "WpfCoinApp\\Models\\Coininfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:16:09.287Z"
+              "WhenOpened": "2025-06-02T07:09:34.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Temp.cs",
               "DocumentMoniker": "D:\\JobTestTask\\TestTask\\WpfCoinApp\\WpfCoinApp\\Models\\Temp.cs",
               "RelativeDocumentMoniker": "WpfCoinApp\\Models\\Temp.cs",

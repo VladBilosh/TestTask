@@ -24,37 +24,61 @@ namespace WpfCoinApp
     /// </summary>
     public partial class MainPage : Page
     {
-        private Frame _mainFrame;
-        private static readonly HttpClient _httpClient = new HttpClient();
+        private Frame mainFrame;
+        private static readonly HttpClient httpClient = new HttpClient();
+        private int topCount = 10; // Default to top 10
 
         public MainPage()
         {
             InitializeComponent();
-            _ = LoadTopCurrenciesAsync();
             SetCurrencyListTemplate();
+            SetUserAgentHeader();
+            _ = LoadTopCurrenciesAsync();
         }
 
         public MainPage(Frame mainFrame) : this()
         {
-            _mainFrame = mainFrame;
+            this.mainFrame = mainFrame;
+        }
+
+        private void SetUserAgentHeader()
+        {
+            if (!httpClient.DefaultRequestHeaders.UserAgent.Any())
+            {
+                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; WpfCoinApp/1.0)");
+            }
         }
 
         private async Task LoadTopCurrenciesAsync()
         {
-            string url = "https://rest.coincap.io/v3/assets?limit=10&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
-            var json = await _httpClient.GetStringAsync(url);
-            var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
-            CurrencyList.ItemsSource = coinInfo?.data;
+            try
+            {
+                string url = $"https://rest.coincap.io/v3/assets?limit={topCount}&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
+                var json = await httpClient.GetStringAsync(url);
+                var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
+                CurrencyList.ItemsSource = coinInfo?.data;
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"Failed to load data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private async void Search_Click(object sender, RoutedEventArgs e)
         {
-            string url = $"https://rest.coincap.io/v3/assets?search={SearchBox.Text}&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
-            var json = await _httpClient.GetStringAsync(url);
-            var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
-            CurrencyList.ItemsSource = coinInfo?.data;
+            try
+            {
+                string url = $"https://rest.coincap.io/v3/assets?search={SearchBox.Text}&limit={topCount}&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
+                var json = await httpClient.GetStringAsync(url);
+                var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
+                CurrencyList.ItemsSource = coinInfo?.data;
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"Failed to search: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-       
+
         private void SetCurrencyListTemplate()
         {
             var template = new DataTemplate(typeof(Coininfo.CoinData));
@@ -89,21 +113,30 @@ namespace WpfCoinApp
             template.VisualTree = stackPanelFactory;
             CurrencyList.ItemTemplate = template;
         }
-    
 
         private void CurrencyList_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (CurrencyList.SelectedItem is Coininfo.CoinData coin && _mainFrame != null)
+            if (CurrencyList.SelectedItem is Coininfo.CoinData coin && mainFrame != null)
             {
-                _mainFrame.Navigate(new DetailsPage(coin.id, _mainFrame, coin));
+                mainFrame.Navigate(new DetailsPage(coin.id, mainFrame, coin));
             }
         }
 
         private void CurrencyList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (CurrencyList.SelectedItem is Coininfo.CoinData coin && _mainFrame != null)
+            if (CurrencyList.SelectedItem is Coininfo.CoinData coin && mainFrame != null)
             {
-                _mainFrame.Navigate(new DetailsPage(coin.id, _mainFrame, coin));
+                mainFrame.Navigate(new DetailsPage(coin.id, mainFrame, coin));
+            }
+        }
+
+        // Add this event handler to respond to user input for N
+        private async void TopCountBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (int.TryParse(TopCountBox.Text, out int n) && n > 0)
+            {
+                topCount = n;
+                await LoadTopCurrenciesAsync();
             }
         }
     }

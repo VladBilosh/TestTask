@@ -25,10 +25,10 @@ namespace WpfCoinApp
     /// </summary>
     public partial class DetailsPage : Page
     {
-        private Frame _mainFrame;
-        private string _assetId;
-        private static readonly HttpClient _httpClient = new HttpClient();
-        private Coininfo.CoinData _coinInfo = null!;
+        private Frame mainFrame;
+        private string assetId;
+        private static readonly HttpClient httpClient = new HttpClient();
+        private Coininfo.CoinData coinInfo = null!;
 
         public TextBlock? NameText { get; private set; }
         public TextBlock? PriceText { get; private set; }
@@ -73,18 +73,18 @@ namespace WpfCoinApp
         public DetailsPage(string assetId, Frame mainFrame, Coininfo.CoinData coinInfo)
         {
             InitializeComponent();
-            _mainFrame = mainFrame;
-            _assetId = assetId;
+            this.mainFrame = mainFrame;
+            this.assetId = assetId;
             _ = LoadDetailsAsync();
             _ = LoadMarketsAsync();
-            _coinInfo = coinInfo;
-            DataContext = _coinInfo;
+            this.coinInfo = coinInfo;
+            DataContext = this.coinInfo;
         }
 
         public DetailsPage(string id, Frame mainFrame, Models.Coininfo.CoinData coin)
         {
             Id = id;
-            _mainFrame = mainFrame;
+            this.mainFrame = mainFrame;
             Coin = coin;
         }
 
@@ -92,8 +92,8 @@ namespace WpfCoinApp
         {
             try
             {
-                string url = $"https://rest.coincap.io/v3/assets/{_assetId}/markets?apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
-                var json = await _httpClient.GetStringAsync(url);
+                string url = $"https://rest.coincap.io/v3/assets/{assetId}/markets?apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
+                var json = await httpClient.GetStringAsync(url);
                 var marketInfo = JsonConvert.DeserializeObject<MarketsResponse>(json);
                 MarketsList.ItemsSource = marketInfo?.data?.ToList() ?? new List<Market>();
             }
@@ -107,8 +107,8 @@ namespace WpfCoinApp
         {
             try
             {
-                string url = $"https://rest.coincap.io/v3/assets?ids={_assetId}&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
-                var json = await _httpClient.GetStringAsync(url);
+                string url = $"https://rest.coincap.io/v3/assets?ids={assetId}&apiKey=9937f378074076df75f56501936268a2a8efc25d656413055a936ca72f06dcc3";
+                var json = await httpClient.GetStringAsync(url);
                 var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
                 var data = coinInfo?.data?.FirstOrDefault();
                 if (data != null)
