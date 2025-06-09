@@ -8,8 +8,17 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
     <StackPanel>
-        <TextBlock x:Name="SearchBox" Width="200" Margin="10"/>
+        <TextBox x:Name="SearchBox" Width="200" Margin="10"/>
         <Button Content="Search" Click="Search_Click" Width="100" Margin="10"/>
-        <ListView x:Name="CurrencyList" MouseDoubleClick="CurrencyList_MouseDoubleClick"/>
+        <ListView x:Name="CurrencyList" MouseDoubleClick="CurrencyList_MouseDoubleClick" Height="300">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}" Width="100"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding name}" Width="200"/>
+                    <GridViewColumn Header="Symbol" DisplayMemberBinding="{Binding symbol}" Width="100"/>
+                    <GridViewColumn Header="Price (USD)" DisplayMemberBinding="{Binding priceUsd}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </StackPanel>
 </Page>

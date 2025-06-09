@@ -31,6 +31,7 @@ namespace WpfCoinApp
         {
             InitializeComponent();
             _ = LoadTopCurrenciesAsync();
+            SetCurrencyListTemplate();
         }
 
         public MainPage(Frame mainFrame) : this()
@@ -53,6 +54,42 @@ namespace WpfCoinApp
             var coinInfo = JsonConvert.DeserializeObject<Coininfo>(json);
             CurrencyList.ItemsSource = coinInfo?.data;
         }
+       
+        private void SetCurrencyListTemplate()
+        {
+            var template = new DataTemplate(typeof(Coininfo.CoinData));
+
+            var stackPanelFactory = new FrameworkElementFactory(typeof(StackPanel));
+            stackPanelFactory.SetValue(StackPanel.OrientationProperty, Orientation.Horizontal);
+
+            // ID
+            var idText = new FrameworkElementFactory(typeof(TextBlock));
+            idText.SetBinding(TextBlock.TextProperty, new System.Windows.Data.Binding("id"));
+            idText.SetValue(TextBlock.WidthProperty, 100.0);
+            stackPanelFactory.AppendChild(idText);
+
+            // Name
+            var nameText = new FrameworkElementFactory(typeof(TextBlock));
+            nameText.SetBinding(TextBlock.TextProperty, new System.Windows.Data.Binding("name"));
+            nameText.SetValue(TextBlock.WidthProperty, 200.0);
+            stackPanelFactory.AppendChild(nameText);
+
+            // Symbol
+            var symbolText = new FrameworkElementFactory(typeof(TextBlock));
+            symbolText.SetBinding(TextBlock.TextProperty, new System.Windows.Data.Binding("symbol"));
+            symbolText.SetValue(TextBlock.WidthProperty, 100.0);
+            stackPanelFactory.AppendChild(symbolText);
+
+            // PriceUsd
+            var priceText = new FrameworkElementFactory(typeof(TextBlock));
+            priceText.SetBinding(TextBlock.TextProperty, new System.Windows.Data.Binding("priceUsd"));
+            priceText.SetValue(TextBlock.WidthProperty, 150.0);
+            stackPanelFactory.AppendChild(priceText);
+
+            template.VisualTree = stackPanelFactory;
+            CurrencyList.ItemTemplate = template;
+        }
+    
 
         private void CurrencyList_DoubleClick(object sender, MouseButtonEventArgs e)
         {
